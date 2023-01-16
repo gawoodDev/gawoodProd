@@ -7,11 +7,11 @@ let cookieParser = require("cookie-parser")
 let session =  require("express-session")
 
 
-app.set("engine", "ejs")
+app.set("view engine", "ejs")
 app.set("views", "views")
 
 app.use("/assets", express.static("public"))
-app.use(bodyParser.urlencoded({ extented: false }))
+app.use(bodyParser.urlencoded({ extended: false}))
 app.use(bodyParser.json())
 app.use(cookieParser())
 
