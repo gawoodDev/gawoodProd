@@ -1,7 +1,61 @@
-<%- include("component/header", {css: "login"}) %>
+<%- include("component/header", {css: "connectionPage"}) %>
 
-<h1>Login now</h1>
+<section id="connectionPage">
+    
+    
+    <div class="headPage">
+      
+      <div class="logo">
+        <a href="/">
+          <img src="assets/image/logo.png" alt="">
+        </a>
+      </div>
+      
+      <div class="salutation">
+        <h2>Welcom back,</h2>
+        <p>Login in to conntinue</p>
+      </div>
+    </div>
+    
+    <div class="formulaire">
+      <h3 >Se connecter</h3>
 
+      <div>
+        <form action="/login" method="post">
+          <div>
+            <label for="email">Email</label>
+            <input placeholder="Entre votre email" type="text" name="email" id="email" value="" />
+          </div>
+          
+          <div>
+            <label for="password">Password</label>
+            <input placeholder="Entre votre mots-de-pass" type="password" name="password" id="password" value="" />
+          </div>
+          
+          <div class="remenbered">
+            <input  type="checkbox" name="remenbered" id="remenbered" value="" />
+            <label style="display: block" for="remenbered">Remenber me</label>
+          </div>
+          
+          <div>
+            <p class="forgotPass">
+              <a href="">Forget password</a>
+            </p>
+            <button type="submit">Login</button>
+          </div>
+        
+        </form>
+      </div>
+      
+      <p id="newUser">A new user/<a href="/signup">créé un compte</a></p>
+      
+      
+      
+    </div>
+    
+    
+    
+  </section>
 
 
 <%- include("component/footer", { script : "login"}) %>

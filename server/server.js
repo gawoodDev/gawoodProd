@@ -1,9 +1,11 @@
 require('dotenv').config()
 let app = require("./src/app")
 
+console.log(require('express/node_modules/qs').parse('50'))
+
 console.log(process.env.ADMIN_PASSWORD)
 
-app.get("/", function (req, res) {
+app.get("/", function (req, res) {  
     res.status(200)
     res.render("index")
 })

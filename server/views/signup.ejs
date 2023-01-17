@@ -1,6 +1,64 @@
-<%- include("component/header", {css: "login"}) %>
+<%- include("component/header", {css: "connectionPage"}) %>
 
-<h1>Signup now</h1>
+<section id="connectionPage">
+    
+    
+    <div class="headPage">
+      <div class="logo">
+        <a href="/">
+          <img src="assets/image/logo.png" alt="">
+        </a>
+      </div>
+      <div style="" class="salutation">
+        <h2>GAPRODsysteme</h2>
+        <p>Sign in to conntinue</p>
+      </div>
+    </div>
+
+    <div class="formulaire">
+      <h3 >Créé un compte</h3>
+
+      <div>
+        <form action="/signup" method="post">
+          <div>
+            <label for="email">Username</label>
+            <input placeholder="Enter a username" type="text" name="username" id="username" value="" />
+            
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input placeholder="Enter an email" type="email" name="email" id="email" value="" />
+          </div>
+          
+          <div>
+            <label for="password">Password</label>
+            <input placeholder="Entre un mots-de-pass" type="password" name="password" id="password" value="" />
+          </div>
+          
+          <div>
+            <label for="email">Comfirm-password</label>
+            <input placeholder="Confirmer votre mots-de-pass" type="password" name="confirm" id="confirm" value="" />
+          </div>
+          
+          <div>
+            <p class="forgotPass">
+              <a href="">Forget password</a>
+            </p>
+            <button type="submit">Login</button>
+          </div>
+        
+        </form>
+      </div>
+      
+      <p id="newUser">Alreade a user/<a href="/login">se connécter</a></p>
+      
+      
+      
+    </div>
+    
+    
+    
+  </section>
 
 
 

@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="../public/css/index.css" />
+   <link rel="stylesheet" href="../css/index.css" />
 </head>
 <body>
   
   
-  <section id="acceuille">
+  <section style="display: none" id="acceuille">
     <nav id="">
       
       <div class="logo">
@@ -79,10 +79,57 @@
   
   
   
-  <section id="service">
+  <section id="connectionPage">
     
     
+    <div class="headPage">
+      
+      <div class="logo">
+        <img src="/server/public/image/logo.png" alt="">
+      </div>
+      
+      <div class="salutation">
+        <h2>Welcom back</h2>
+        <p>Login in to conntinue</p>
+      </div>
+    </div>
     
+    <div class="formulaire">
+      <h3 >Se connecter</h3>
+
+      <div>
+        <form action="/login" method="post">
+          <div>
+            <label for="email">Email</label>
+            <input placeholder="Entre votre email" type="text" name="email" id="email" value="" />
+            
+          </div>
+          
+          <div>
+            <label for="password">Password</label>
+            <input placeholder="Entre votre mots-de-pass" type="text" name="password" id="password" value="" />
+          </div>
+          
+          <div class="remenbered">
+            <input type="checkbox" name="remenbered" id="remenbered" value="" />
+            <label style="display: block" for="remenbered">Remenber me</label>
+          </div>
+          
+          <div>
+            <p class="forgotPass">
+              <a href="">Forget password</a>
+            </p>
+            <button type="submit">Login</button>
+          </div>
+        
+        </form>
+      </div>
+      
+      <p id="newUser">A new user/<a href="/signup">créé un compte</a></p>
+      
+      
+      
+    </div>
     
     
     

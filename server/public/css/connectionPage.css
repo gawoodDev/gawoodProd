@@ -3,13 +3,16 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html{
+  	font-size: 62.5%;
+}
 body {
 	width: 100%;
 	height: auto;
 	font-size: 15px;
-	background: #f5f5fe;
 	font-family: var(--fontBase);
 	overflow: auto;
+	font-size: 62.5%;
 }
 img {
 	width: 50%;
@@ -58,11 +61,6 @@ section {
 	height: auto;
 }
 
-h1{
-  font-weight: 400;
-  font-family: painter;
-}
-
 
 
 input,
@@ -72,16 +70,15 @@ button {
 	border-radius: 5px;
 	background: var(--ButtonBg);
 	background: #fff;
-	width: auto;
+	width: 100%;
 	padding: 0 15px;
 	min-height: 35px;
 	color: #fff;
 	background: var(--Second)
 }
 
-input
-{
-  background: none;
+input {
+	background: none;
 	border: .5px solid #ccc;
 	width: 240px;
 	color: #333;
@@ -89,109 +86,6 @@ input
 	font-weight: 500;
 }
 
-#acceuille nav{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-#acceuille{
-  height: calc(100vh );
-  max-height: 950px;
-  background: #88B6FF;
-}
-
-#acceuille nav{
-  width: 100%;
-  background: #fff;
-  height: 50px;
-  justify-content: space-between;
-  padding: 0 15px;
-  box-shadow: 0px 0px 12px 2px #0003;
-}
-
-#acceuille nav .logo {
-  font-size: 17px;
-  font-family: Montserrat;
-  font-weight: 500;
-}
-
-#acceuille nav ul{
-  display: none;
-}
-
-#home{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-
-#acceuille .left{
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  background: #0000;
-  padding: 40px 20px 40px;
-  color: #fff;
-}
-
-
-.titre{
-  font-size: 30px;
-  font-weight: 450;
-  font-family: Montserrat;
-}
-
-.text{
-  font-size: 12px;
-  font-weight: 450;
-  font-family: poppins;
-  margin-bottom: 30px;
-}
-
-
-#acceuille .right{
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.right img{
-  width: 178px;
-}
-
-
-#service{
-  height: calc(100vh * 3);
-  background:  #fff
-}
-
-#tutoriel{
-  height: calc(100vh * 2);
-  background:  #ECECEC
-}
-
-#produit{
-  height: calc(100vh * 3);
-  background:  #88B6FF
-}
-
-#blog{
-  height: calc(100vh * 3);
-  background:  #fff
-}
-
-#footer{
-  height: calc(100vh - 20vh);
-  background:  #0E131A
-}
-
-
-/*:::::::*/
 
 
 #connectionPage{
@@ -294,6 +188,7 @@ input
   margin: .1rem 0px;
   border: none;
   border: .1rem solid #BFBFBF;
+  
 }
 
 .formulaire > div form div input:focus{
@@ -304,6 +199,7 @@ input
   color: #aaa;
   font-weight: 400;
 }
+
 
 .formulaire > div form div label{
   display: none;
@@ -318,7 +214,7 @@ input
   font-size: 15px;
   color: #397BFF;
   font-weight: 500;
-  margin: 20px 0 10px 0;
+  margin: 10px 0 10px 0;
   float: right;
 }
 
@@ -329,11 +225,14 @@ input
 }
 
 .formulaire > div form div.remenbered input{
-  width: 30px;
-  height: 30px;
+  width: 2.5rem;
+  height: 2.5px;
 }
 
-
+.formulaire > div form div.remenbered label{
+  font-size: 15px;
+  margin-left: 5px;
+}
 
 #newUser{
   width: 100%;
@@ -344,36 +243,8 @@ input
   font-size: 15px;
 }
 #newUser a{
-  color: #2C3DFF
+  color: #397FFF
 }
 
 
 
-
-
-
-
-
-
-.formulaire > div form div button{
-  width: 100%;
-  height: 40px;
-  border: 0.5px solid #8F8F8F;
-}
-
-
-
-@media screen and (min-width: 900px){
-  body{
-    background: red;
-    margin-top: 40px;
-  }
-  #acceuille{
-    min-height: 700px;
-  }
-  #home{
-    padding: 100px 100px;
-    background: #111;
-    flex-direction: row;
-  }
-}
